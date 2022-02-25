@@ -31,7 +31,7 @@ class IntroSlideAdapter(private val introSlide: List<IntroSlide>):
     }
 
     inner class IntroSliderViewHolder(view: View):RecyclerView.ViewHolder(view) {
-        private val businessHeaderText: TextView = view.findViewById(R.id.textTitle)
+        private val businessHeaderText: TextView = view.findViewById(R.id.businessHeader)
         private val businessInfoText: TextView = view.findViewById(R.id.businessInfo)
 
         fun bind(introSlide: IntroSlide){
