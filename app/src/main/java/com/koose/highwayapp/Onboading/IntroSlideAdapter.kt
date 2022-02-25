@@ -21,7 +21,7 @@ class IntroSlideAdapter(private val introSlide: List<IntroSlide>):
         TODO("Not yet implemented")
     }
 
-    inner class IntroSliderViewHolder(view: View) {
+    inner class IntroSliderViewHolder(view: View):RecyclerView.ViewHolder(view) {
         private val textTitle:
 
     }
