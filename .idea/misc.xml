@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/23350/Desktop/IspaceBootcampFeb/HighwayAPP/app/src/main/res/layout/slide_item_container.xml" value="0.23229166666666667" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1796875" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/activity_swipe_buz_info.xml" value="0.1796875" />
+        <entry key="app/src/main/res/layout/content_swipe_buz_info.xml" value="0.1796875" />
+        <entry key="app/src/main/res/layout/slide_item_container.xml" value="0.1" />
       </map>
     </option>
   </component>
