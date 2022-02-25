@@ -5,7 +5,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
 class IntroSlideAdapter(private val introSlide: List<IntroSlide>):
-                RecyclerView.Adapter<IntroSlideAdapter.IntroSliderViewHolder>(){
+                                RecyclerView.Adapter<IntroSlideAdapter.
+                                IntroSliderViewHolder>(){
 
 
 
