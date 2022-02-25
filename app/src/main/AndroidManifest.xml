@@ -10,18 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HighwayAPP">
         <activity
-            android:name=".UI.SwipeBuzInfo"
-            android:exported="false"
+            android:name=".IntroBuz"
+            android:exported="true"
             android:label="@string/title_activity_swipe_buz_info"
-            android:theme="@style/Theme.HighwayAPP.NoActionBar" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:theme="@style/Theme.HighwayAPP.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
         </activity>
     </application>
 

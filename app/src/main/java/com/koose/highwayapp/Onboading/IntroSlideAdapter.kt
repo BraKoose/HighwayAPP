@@ -8,7 +8,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.koose.highwayapp.R
 import org.w3c.dom.Text
 
-class IntroSlideAdapter(private val introSlide: List<IntroSlide>): RecyclerView.Adapter<IntroSlideAdapter.IntroSlideViewHolder>() {
+class IntroSlideAdapter(private val introSlide: List<IntroSlide>):
+    RecyclerView.Adapter<IntroSlideAdapter.IntroSlideViewHolder>() {
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int

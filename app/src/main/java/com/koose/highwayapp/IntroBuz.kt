@@ -39,7 +39,7 @@ class IntroBuz : AppCompatActivity() {
 
         introSliderViewPager = findViewById(R.id.introSliderViewPager)
         button = findViewById(R.id.buttonNext)
-        introSliderViewPager.adapter = introSliderViewPager
+        introSliderViewPager.adapter = introSlideAdapter
         skipIntroText = findViewById(R.id.skipIntroText)
         indicatorsContainer = findViewById(R.id.indicatorsContainer)
 
