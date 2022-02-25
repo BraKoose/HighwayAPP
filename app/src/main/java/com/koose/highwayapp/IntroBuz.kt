@@ -12,6 +12,7 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.content.ContextCompat
+import androidx.core.view.get
 import androidx.viewpager2.widget.ViewPager2
 
 class IntroBuz : AppCompatActivity() {

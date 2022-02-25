@@ -6,38 +6,42 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.koose.highwayapp.R
+import org.w3c.dom.Text
 
-class IntroSlideAdapter(private val introSlide: List<IntroSlide>):
-                                RecyclerView.Adapter<IntroSlideAdapter.
-                                IntroSliderViewHolder>(){
-
-
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int):
-            IntroSliderViewHolder {
-        return IntroSliderViewHolder(
+class IntroSlideAdapter(private val introSlide: List<IntroSlide>): RecyclerView.Adapter<IntroSlideAdapter.IntroSlideViewHolder>() {
+    override fun onCreateViewHolder(
+        parent: ViewGroup,
+        viewType: Int
+    ): IntroSlideAdapter.IntroSlideViewHolder {
+        return IntroSlideViewHolder(
             LayoutInflater.from(parent.context).inflate(
                 R.layout.slide_item_container, parent, false
             )
         )
-    }
+        }
 
-    override fun onBindViewHolder(holder: IntroSliderViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: IntroSlideAdapter.IntroSlideViewHolder, position: Int) {
         holder.bind(introSlide[position])
-    }
+        }
 
     override fun getItemCount(): Int {
         return introSlide.size
     }
 
-    inner class IntroSliderViewHolder(view: View):RecyclerView.ViewHolder(view) {
-        private val businessHeaderText: TextView = view.findViewById(R.id.businessHeader)
-        private val businessInfoText: TextView = view.findViewById(R.id.businessInfo)
+    inner class IntroSlideViewHolder(view: View) : RecyclerView.ViewHolder(view){
+        private val businessHeader = view.findViewById<TextView>(R.id.businessHeader)
+        private val businessInfo = view.findViewById<TextView>(R.id.businessInfo)
 
-        fun bind(introSlide: IntroSlide){
-            businessHeaderText.text = introSlide.businessHeader
-            businessInfoText.text = introSlide.businessInfo
+        fun bind(introSlide:IntroSlide){
+            businessHeader.text = introSlide.businessHeader
+            businessInfo.text = introSlide.businessInfo
         }
 
     }
+
 }
+
+
+
+
+
