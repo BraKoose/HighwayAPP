@@ -3,12 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/custom_rectangle_view_for_button.xml" value="0.126" />
         <entry key="app/src/main/res/drawable/indicator_active.xml" value="0.138" />
         <entry key="app/src/main/res/drawable/indicator_inactive.xml" value="0.138" />
+        <entry key="app/src/main/res/drawable/login_page_logo.xml" value="0.126" />
         <entry key="app/src/main/res/layout/activity_intro.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_swipe_buz_info.xml" value="0.1796875" />
         <entry key="app/src/main/res/layout/content_swipe_buz_info.xml" value="0.1796875" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.11510416666666666" />
         <entry key="app/src/main/res/layout/slide_item_container.xml" value="0.14" />
       </map>
     </option>

@@ -14,4 +14,9 @@
     <string name="skip_intro">skip_intro</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="show_password">show_password</string>
+    <string name="forgot_password">password</string>
+    <string name="need_a_new_account">newaccount</string>
+    <string name="login_to_account">login</string>
+    <string name="welcome_logo_for_login_page">welcome</string>
 </resources>
