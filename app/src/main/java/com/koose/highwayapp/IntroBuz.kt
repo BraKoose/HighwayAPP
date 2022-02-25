@@ -14,6 +14,7 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.core.view.get
 import androidx.viewpager2.widget.ViewPager2
+import com.koose.highwayapp.Onboading.SliderSlide.introSlideAdapter
 
 class IntroBuz : AppCompatActivity() {
 
@@ -53,7 +54,7 @@ class IntroBuz : AppCompatActivity() {
         })
 
         button.setOnClickListener {
-            if (introSliderViewPager.currentItem + 1 < introSliderAdapter.itemCount) {
+            if (introSliderViewPager.currentItem + 1 < introSlideAdapter.itemCount) {
                 introSliderViewPager.currentItem +=1
             }else{
                 Intent(applicationContext, MainActivity::class.java).also {
@@ -75,7 +76,7 @@ class IntroBuz : AppCompatActivity() {
     }
 
     private fun setupIndicators() {
-        val indicators = arrayOfNulls<ImageView>(introSliderAdapter.itemCount)
+        val indicators = arrayOfNulls<ImageView>(introSlideAdapter.itemCount)
         val layoutParams: LinearLayout.LayoutParams =
             LinearLayout.LayoutParams(
                 ViewGroup.LayoutParams.WRAP_CONTENT,

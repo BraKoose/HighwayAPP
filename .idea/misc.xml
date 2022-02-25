@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/indicator_active.xml" value="0.138" />
+        <entry key="app/src/main/res/drawable/indicator_inactive.xml" value="0.138" />
         <entry key="app/src/main/res/layout/activity_intro.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_swipe_buz_info.xml" value="0.1796875" />
