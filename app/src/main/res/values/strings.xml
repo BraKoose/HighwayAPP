@@ -24,8 +24,9 @@
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="bus_name">Shuttle Drive</string>
-    <string name="loginButton">Login</string>
-    <string name="registerButton">Register</string>
-    <string name="firstname">first</string>
-    <string name="lastname">lastname</string>
+    <string name="btnlogin">Login</string>
+    <string name="btnregister">Register</string>
+    <string name="editUsername">Username</string>
+    <string name="editemail">Email</string>
+    <string name="editpassword">Password</string>
 </resources>
