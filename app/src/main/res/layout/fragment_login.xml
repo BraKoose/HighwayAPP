@@ -1,193 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context="com.koose.highwayapp.IntroBuz">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#512da8"
-        android:theme="@style/AppTheme.AppBarOverlay"
-        app:elevation="0dp">
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="13dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Login"
+        android:textSize="30sp" />
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            app:popupTheme="@style/AppTheme.PopupOverlay"
-            app:theme="@style/AppTheme.Toolbar">
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_login"
+        android:layout_alignStart="@+id/tv_login"
+        android:layout_below="@+id/tv_login"
+        android:layout_marginTop="80dp"
+        android:fontFamily="monospace"
+        android:text="Username"
+        android:textSize="25sp" />
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp">
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_username"
+        android:ems="17"
+        android:layout_alignLeft="@+id/tv_username" />
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-                    android:src="@drawable/ic_person_outline_white_24dp" />
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_username"
+        android:layout_alignStart="@+id/et_username"
+        android:layout_below="@+id/et_username"
+        android:layout_marginTop="33dp"
+        android:fontFamily="monospace"
+        android:text="Password"
+        android:textSize="25sp" />
 
-            </RelativeLayout>
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="17"
+        android:layout_below="@+id/tv_password"
+        android:layout_alignLeft="@+id/tv_password" />
 
-        </androidx.appcompat.widget.Toolbar>
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_password"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:ems="12"
+        android:text="Login" />
 
-    </com.google.android.material.appbar.AppBarLayout>
+    <Button
+        android:id="@+id/btn_signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:ems="12"
+        android:text="SignUp" />
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="-16dp"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
-
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="260dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/bus_image_1" />
-
-                    <TextView
-                        android:id="@+id/textView"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentTop="true"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="16dp"
-                        android:fontFamily="@font/print_clearly"
-                        android:text="Hey Shanky!"
-                        android:textAlignment="center"
-                        android:textColor="#FFFFFF"
-                        android:textSize="32sp" />
-
-                    <TextView
-                        android:id="@+id/textView2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/textView"
-                        android:layout_marginTop="8dp"
-                        android:fontFamily="@font/gotham"
-                        android:text="Where you want to go."
-                        android:textAlignment="center"
-                        android:textColor="#FFFFFF"
-                        android:textSize="18sp" />
-
-                </RelativeLayout>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginTop="-44dp"
-                    android:layout_marginRight="8dp"
-                    app:cardCornerRadius="8dp"
-                    app:cardUseCompatPadding="true"
-                    app:contentPadding="16dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:layout_marginBottom="16dp"
-                        android:orientation="vertical">
-
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="8dp"
-                            android:textColorHint="#FF8A99AF">
-
-                            <EditText
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:drawableStart="@drawable/ic_location_on_light_blue_24dp"
-                                android:drawablePadding="16dp"
-                                android:fontFamily="@font/calibri"
-                                android:hint="Destination"
-                                android:inputType="text"
-                                android:maxLines="1"
-                                android:textColor="@android:color/black"
-                                android:textSize="16sp" />
-                        </com.google.android.material.textfield.TextInputLayout>
-
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="8dp"
-                            android:textColorHint="#FF8A99AF">
-
-                            <EditText
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:drawableStart="@drawable/ic_location_on_light_blue_24dp"
-                                android:drawablePadding="16dp"
-                                android:fontFamily="@font/calibri"
-                                android:hint="From"
-                                android:inputType="text"
-                                android:maxLines="1"
-                                android:textColor="@android:color/black"
-                                android:textSize="16sp" />
-                        </com.google.android.material.textfield.TextInputLayout>
-
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="8dp"
-                            android:textColorHint="#FF8A99AF">
-
-                            <EditText
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:drawableStart="@drawable/ic_date_range_light_blue_24dp"
-                                android:drawablePadding="16dp"
-                                android:fontFamily="@font/calibri"
-                                android:hint="Select Date"
-                                android:inputType="date"
-                                android:maxLines="1"
-                                android:textColor="@android:color/black"
-                                android:textSize="16sp" />
-                        </com.google.android.material.textfield.TextInputLayout>
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-
-                <Button
-                    android:id="@+id/search_buses"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="16dp"
-                    android:background="@drawable/buttonshape"
-                    android:fontFamily="@font/calibri"
-                    android:text="Search Buses"
-                    android:textAllCaps="false"
-                    android:textColor="#ffffff"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-
-
-        </ScrollView>
-
-    </RelativeLayout>
-
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</RelativeLayout>
