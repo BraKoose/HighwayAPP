@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "323980575871",
+    "project_id": "highwayapp-6b58b",
+    "storage_bucket": "highwayapp-6b58b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:323980575871:android:8cc0527fe2e5ca21a26b4a",
+        "android_client_info": {
+          "package_name": "com.koose.highwayapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "323980575871-gomsluen50s1r8l2nfuel8c8pv0n4gt2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.koose.highwayapp",
+            "certificate_hash": "046b4857dd75c795017c598397a3ec468abf27de"
+          }
+        },
+        {
+          "client_id": "323980575871-6h8qhpmdar9caoli11510s7mcgqiec1b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA791_ghJ90kjROtrc9lp8U4oSVBhJXMYQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "323980575871-6h8qhpmdar9caoli11510s7mcgqiec1b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
