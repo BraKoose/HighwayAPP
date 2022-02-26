@@ -1,85 +1,102 @@
-
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UI.RegisterFragment">
-
-    <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:clipChildren="false"
-    android:clipToPadding="false"
-    android:orientation="vertical"
-    android:padding="24dp"
-    android:paddingTop="16dp">
-
-    <ImageView
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="48dp"
-        android:layout_marginBottom="16dp"
-        app:srcCompat="@drawable/bus_booking_logo" />
+    app:chainUseRtl="true"
+    tools:context=".UI.RegisterFragment"
+    tools:ignore="Autofill">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="132dp"
-        android:text="@string/bus_name"
-        android:textAllCaps="true"
-        android:textSize="16sp" />
+        android:text="@string/create_account"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="4dp"
-        android:hint="@string/firstname">
+        android:layout_margin="20dp"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@id/etPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:maxLines="1" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="4dp"
-        android:hint="@string/lastname">
+        android:layout_marginBottom="20dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:maxLength="8"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@id/etConfirmPassword"
+        app:layout_constraintEnd_toEndOf="@id/etEmail"
+        app:layout_constraintStart_toStartOf="@id/etEmail"
+        app:layout_constraintTop_toBottomOf="@id/etEmail" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:maxLines="1" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/password_text_input"
-        android:layout_width="match_parent"
+    <EditText
+        android:id="@+id/etConfirmPassword"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="3dp"
-        app:passwordToggleEnabled="true"
-        android:hint="@string/password">
+        android:layout_marginBottom="20dp"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:maxLength="8"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@id/btnCreateAccount"
+        app:layout_constraintEnd_toEndOf="@id/etPassword"
+        app:layout_constraintStart_toStartOf="@id/etPassword"
+        app:layout_constraintTop_toBottomOf="@id/etPassword" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/password_edit_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/btnCreateAccount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:text="@string/create_account"
+        app:layout_constraintBottom_toTopOf="@id/btnSignIn2"
+        app:layout_constraintEnd_toEndOf="@id/etConfirmPassword"
+        app:layout_constraintStart_toStartOf="@id/etConfirmPassword"
+        app:layout_constraintTop_toBottomOf="@id/etConfirmPassword" />
 
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/register_button"
+    <TextView
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/registerButton" />
+        android:text="@string/or"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSignIn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCreateAccount" />
 
-</LinearLayout>
+    <Button
+        android:id="@+id/btnSignIn2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/sign_in"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/btnCreateAccount"
+        app:layout_constraintStart_toStartOf="@id/btnCreateAccount"
+        app:layout_constraintTop_toBottomOf="@id/btnCreateAccount" />
 
-
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

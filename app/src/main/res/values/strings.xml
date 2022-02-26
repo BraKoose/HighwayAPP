@@ -29,4 +29,9 @@
     <string name="editUsername">Username</string>
     <string name="editemail">Email</string>
     <string name="editpassword">Password</string>
+    <string name="sign_in">sign</string>
+    <string name="create_account">create_account</string>
+    <string name="email">email</string>
+    <string name="confirm_password">confirm_password</string>
+    <string name="or">or</string>
 </resources>
