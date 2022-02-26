@@ -19,4 +19,6 @@
     <string name="need_a_new_account">newaccount</string>
     <string name="login_to_account">login</string>
     <string name="welcome_logo_for_login_page">welcome</string>
+    <string name="enter_password">enter_password</string>
+    <string name="enter_email">email</string>
 </resources>
