@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
 import com.koose.highwayapp.R
+import kotlinx.android.synthetic.main.fragment_login.*
 
 
 class RegisterFragment : Fragment() {
@@ -21,7 +22,7 @@ class RegisterFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_register, container, false)
-        createAccUser = arrayOf()
+        createAccUser = arrayOf(password_edit_text)
     }
 
 }
