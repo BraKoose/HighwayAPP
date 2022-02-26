@@ -9,7 +9,7 @@ import com.koose.highwayapp.R
 
 
 class RegisterFragment : Fragment() {
-    private lateinit var mAuth:
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
