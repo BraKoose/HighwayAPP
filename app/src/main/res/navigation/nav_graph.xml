@@ -2,10 +2,20 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_grapg">
+    android:id="@+id/nav_grapg"
+    app:startDestination="@id/bookingFragment">
     <fragment
         android:id="@+id/searchBuses"
         android:name="com.koose.highwayapp.UI.searchBuses"
         android:label="fragment_search_buses"
-        tools:layout="@layout/fragment_search_buses" />
+        tools:layout="@layout/fragment_search_buses" >
+        <action
+            android:id="@+id/action_searchBuses_to_bookingFragment"
+            app:destination="@id/bookingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookingFragment"
+        android:name="com.koose.highwayapp.UI.bookingFragment"
+        android:label="fragment_booking"
+        tools:layout="@layout/fragment_booking" />
 </navigation>
