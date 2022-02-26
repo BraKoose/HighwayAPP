@@ -1,84 +1,196 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.koose.highwayapp.IntroBuz">
 
-    <TextView
-        android:id="@+id/tv_login"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="11dp"
-        android:layout_marginLeft="11dp"
-        android:layout_marginTop="13dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Login"
-        android:textSize="30sp" />
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:paddingTop="16dp">
 
-    <TextView
-        android:id="@+id/tv_username"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/tv_login"
-        android:layout_alignStart="@+id/tv_login"
-        android:layout_below="@+id/tv_login"
-        android:layout_marginTop="80dp"
-        android:fontFamily="monospace"
-        android:text="Username"
-        android:textSize="25sp" />
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="48dp"
+            android:layout_marginBottom="16dp"
+            app:srcCompat="@drawable/bus_booking_logo" />
 
-    <EditText
-        android:id="@+id/et_username"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tv_username"
-        android:ems="17"
-        android:layout_alignLeft="@+id/tv_username" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="132dp"
+            android:text="@string/bus_name"
+            android:textAllCaps="true"
+            android:textSize="16sp" />
 
-    <TextView
-        android:id="@+id/tv_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/et_username"
-        android:layout_alignStart="@+id/et_username"
-        android:layout_below="@+id/et_username"
-        android:layout_marginTop="33dp"
-        android:fontFamily="monospace"
-        android:text="Password"
-        android:textSize="25sp" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:hint="@string/username">
 
-    <EditText
-        android:id="@+id/et_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="17"
-        android:layout_below="@+id/tv_password"
-        android:layout_alignLeft="@+id/tv_password" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
-        android:id="@+id/btn_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/et_password"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="30dp"
-        android:ems="12"
-        android:text="Login" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            app:passwordToggleEnabled="true"
+            android:hint="@string/password">
 
-    <Button
-        android:id="@+id/btn_signUp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btn_login"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="30dp"
-        android:ems="12"
-        android:text="SignUp" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
 
-</RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loginButton" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/register_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/registerButton" />
+
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/login"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginStart="141dp"-->
+<!--        android:layout_marginLeft="141dp"-->
+<!--        android:layout_marginTop="33dp"-->
+<!--        android:layout_marginEnd="169dp"-->
+<!--        android:text="Login"-->
+<!--        app:srcCompat="@drawable/bus_booking_logo" />-->
+
+
+<!--    <EditText-->
+<!--        android:id="@+id/usernamefield"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="30dp"-->
+<!--        android:layout_marginTop="200dp"-->
+<!--        android:hint="Username"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/login" />-->
+
+
+<!--    <EditText-->
+<!--        android:id="@+id/passwordfield"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="30dp"-->
+<!--        android:layout_marginTop="300dp"-->
+<!--        android:hint="Password"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_username"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/tv_login"-->
+<!--        android:layout_alignStart="@+id/tv_login"-->
+<!--        android:layout_alignLeft="@+id/tv_login"-->
+<!--        android:layout_marginStart="-127dp"-->
+<!--        android:layout_marginLeft="-127dp"-->
+<!--        android:layout_marginTop="51dp"-->
+<!--        android:fontFamily="monospace"-->
+<!--        android:text="Username"-->
+<!--        android:textSize="25sp" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/usernameIcon"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/et_username"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/tv_username"-->
+<!--        android:layout_alignLeft="@+id/tv_username"-->
+<!--        android:layout_marginLeft="27dp"-->
+<!--        android:layout_marginTop="1dp"-->
+<!--        android:ems="17"-->
+<!--        android:hint="@string/username" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_password"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignLeft="@+id/et_username"-->
+<!--        android:layout_alignStart="@+id/et_username"-->
+<!--        android:layout_below="@+id/et_username"-->
+<!--        android:layout_marginTop="33dp"-->
+<!--        android:fontFamily="monospace"-->
+<!--        android:text="Password"-->
+<!--        android:textSize="25sp" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/et_password"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/tv_password"-->
+<!--        android:hint="@string/enter_password"-->
+<!--        android:layout_alignLeft="@+id/tv_password"-->
+<!--        android:ems="17"-->
+<!--        android:inputType="textPassword" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_login"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/et_password"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:layout_marginTop="114dp"-->
+<!--        android:ems="12"-->
+<!--        android:text="Login" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_signUp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/btn_login"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:layout_marginTop="-48dp"-->
+<!--        android:layout_marginEnd="-5dp"-->
+<!--        android:ems="12"-->
+<!--        android:text="SignUp" />-->
+
+</ScrollView>
