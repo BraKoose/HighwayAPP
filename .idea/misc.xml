@@ -23,6 +23,7 @@
         <entry key="app/src/main/res/layout/content_swipe_buz_info.xml" value="0.1796875" />
         <entry key="app/src/main/res/layout/fragment_booking.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_register.xml" value="0.10572916666666667" />
         <entry key="app/src/main/res/layout/fragment_search_buses.xml" value="0.12" />
         <entry key="app/src/main/res/layout/slide_item_container.xml" value="0.14" />
       </map>
