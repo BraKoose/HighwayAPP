@@ -26,4 +26,6 @@
     <string name="bus_name">Shuttle Drive</string>
     <string name="loginButton">Login</string>
     <string name="registerButton">Register</string>
+    <string name="firstname">first</string>
+    <string name="lastname">lastname</string>
 </resources>
