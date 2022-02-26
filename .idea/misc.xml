@@ -5,6 +5,7 @@
       <map>
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.138" />
         <entry key="app/src/main/res/drawable/custom_rectangle_view_for_button.xml" value="0.126" />
+        <entry key="app/src/main/res/drawable/ic_arrow_back_white_24dp.xml" value="0.138" />
         <entry key="app/src/main/res/drawable/indicator_active.xml" value="0.138" />
         <entry key="app/src/main/res/drawable/indicator_inactive.xml" value="0.138" />
         <entry key="app/src/main/res/drawable/login_page_logo.xml" value="0.126" />
@@ -12,8 +13,9 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_swipe_buz_info.xml" value="0.1796875" />
         <entry key="app/src/main/res/layout/content_swipe_buz_info.xml" value="0.1796875" />
+        <entry key="app/src/main/res/layout/fragment_booking.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/fragment_search_buses.xml" value="0.11666666666666667" />
+        <entry key="app/src/main/res/layout/fragment_search_buses.xml" value="0.12" />
         <entry key="app/src/main/res/layout/slide_item_container.xml" value="0.14" />
       </map>
     </option>

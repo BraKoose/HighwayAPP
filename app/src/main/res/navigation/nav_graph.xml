@@ -2,4 +2,10 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_grapg" />
+    android:id="@+id/nav_grapg">
+    <fragment
+        android:id="@+id/searchBuses"
+        android:name="com.koose.highwayapp.UI.searchBuses"
+        android:label="fragment_search_buses"
+        tools:layout="@layout/fragment_search_buses" />
+</navigation>
