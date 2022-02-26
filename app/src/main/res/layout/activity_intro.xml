@@ -32,17 +32,27 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         />
+
     <LinearLayout
         android:id="@+id/indicatorsContainer"
         android:layout_width="match_parent"
-        android:layout_height="350dp"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_margin="50dp"
         android:layout_marginBottom="12dp"
-        android:background="@drawable/splash"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/buttonNext"
         />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/introSliderViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toTopOf="@+id/indicatorsContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
